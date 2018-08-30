@@ -101,8 +101,8 @@ var server = app.listen(process.env.PORT || 3000, listen);
 
 // This call back just tells us that the server has started
 function listen() {
-  //var host = server.address().address;
-  const host = '127.0.0.1';
+  var host = server.address().address;
+  //const host = '127.0.0.1';
   var port = server.address().port;
   console.log('Keerthi app listening to http://' +host +':' + port);
 }
