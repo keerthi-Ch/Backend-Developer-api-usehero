@@ -1,0 +1,25 @@
+{
+  "name": "keerthiapi",
+  "version": "1.0.0",
+  "description": "Keerthi API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keerthi-Ch/Backend-Developer-api-usehero.git"
+  },
+  "author": "keerthi",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3"
+  },
+  "engines":{
+    "node":"8.11.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}

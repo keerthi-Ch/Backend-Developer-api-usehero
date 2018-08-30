@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Receive List of Events in JSON</title>
+
+    <script src="libraries/p5.js" type="text/javascript"></script>
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="inputdata.js" type="text/javascript"></script>
+
+    <style>
+      body {
+        padding: 20px;
+      }
+    </style>
+
+  </head>
+  <body>
+
+
+    <h1 style="color:Blue;font: Times New Roman;">Backend developer challenge </h1>
+    <h4 style="color:rgb(194, 206, 152);font: Times New Roman;">Endpoint1</h4>
+    	<h2 id="pMerchant" style="color:Violet;font: Times New Roman;">Select Merchant ID to retrieve the Product Details</h2>
+    
+    	<form action="http://localhost:3000/getProduct/iWU4p9dJ9m" method="GET">
+    		<p style="color:rgba(255, 99, 71, 12);font: Times New Roman;"> Click on any of the Merchant Button to display the details</p>
+      <button id="btnMerchant1"> MerchantID 1 </button>
+   
+
+    </form>
+ 		<form action="http://localhost:3000/getProduct/YcxOCwj0jg" method="GET">
+      <button id="btnMerchant2"> MerchantID2 </button>
+    </form>
+
+    <h4 style="color:rgb(194, 206, 152);font: Times New Roman;">Endpoint 2</h4>
+   <h2 style="color:Violet;font: Times New Roman;">Summary of Processed Events</h2>
+   <form action="http://localhost:3000/getsummaryproducts" method="GET">
+      <button id="btnsummary"> Summary of Products </button>
+    </form>
+    	
+  </body>
+</html>
